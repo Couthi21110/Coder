@@ -1,7 +1,8 @@
-@import "./partials/reset";
-
 @import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/reset";
+@import "./partials/index";
+@import "./partials/hombreymujeryaccesorios";
+@import "./partials/form";
+@import "./partials/mediaqueries";
 
-@import "./partials/tarjetas";
-@import "./partials/body";
-@import "./partials/footer";

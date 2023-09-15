@@ -1,0 +1,23 @@
+@mixin tarjetas {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+    &:hover {
+        transform: scale(1.15);
+        transition: all (0.3s);
+      }
+    
+}
+@mixin imgtarjetas{
+    max-width: 100%;
+    height: 200px;
+}
+@mixin titulotarjeta{
+    margin-top: 10px;
+  font-size: 1.2rem;
+}

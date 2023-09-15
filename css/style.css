@@ -1,0 +1,273 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* h1 {
+  color: white !important;
+}
+
+* h2 {
+  color: white !important;
+}
+
+body {
+  background-image: url("../Images/Fondo.jpg");
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  margin: 10px;
+  background-color: rgb(18, 18, 18);
+  width: 1000px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: red;
+}
+
+.ul {
+  list-style: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.menu .menu-item {
+  margin: 0 15px; /* Espacio entre elementos del menú */
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "devoluciones envios metodos-de-pago";
+  background-color: darkcyan;
+  padding: 50px;
+}
+.servicios .devoluciones {
+  grid-area: devoluciones;
+  padding: 10px;
+}
+.servicios .envios {
+  padding: 10px;
+  grid-area: envios;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.servicios .metodos-de-pago {
+  grid-area: metodos-de-pago;
+  padding: 10px;
+}
+
+.ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  color: white;
+  background-color: darkslategray;
+  border-color: black;
+  padding: 100px;
+  height: 100%;
+}
+
+.texto-aviso {
+  padding: 50px;
+  margin: 10px;
+  color: red;
+  background-color: yellow;
+  font-size: 30px;
+}
+
+footer {
+  background-color: black;
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo-footer redes-footer email-footer";
+}
+
+footer .logo-footer {
+  grid-area: logo-footer;
+}
+
+footer .logo {
+  width: 40%;
+}
+
+footer .redes-footer {
+  grid-area: redes-footer;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+footer .redes-footer li {
+  margin: 10px;
+  background-color: rgb(18, 18, 18);
+  border: 2px white solid;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+footer .redes-footer li :hover {
+  color: red;
+  text-decoration: none;
+}
+
+footer .email-footer {
+  grid-area: email-footer;
+  color: white;
+  justify-content: center;
+  margin: 10px;
+}
+
+.card {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px;
+}
+.card:hover {
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.enviar {
+  margin: 20px;
+}
+
+@media (max-width: 575px) {
+  .menu {
+    flex-direction: column; /* Cambia la dirección del menú a columna */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  .menu-item {
+    margin: 10px 0; /* Espacio entre elementos del menú en el modo columna */
+  }
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "devoluciones" "envios" "metodos-de-pago";
+  }
+  .devoluciones {
+    grid-area: devoluciones;
+  }
+  .envios {
+    grid-area: envios;
+  }
+  .metodos-de-pago {
+    grid-area: metodos-de-pago;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo-footer" "redes-footer" "email-footer";
+  }
+  .logo-footer {
+    grid-area: logo-footer;
+  }
+  .redes-footer {
+    grid-area: redes-footer;
+  }
+  .email-footer {
+    grid-area: email-footer;
+  }
+}
+/* Estilos para el breakpoint ≥576px y <768px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu-item {
+    margin: 0 10px; /* Reduce el espacio entre elementos del menú */
+  }
+}
+/* Estilos para el breakpoint ≥768px y <992px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item {
+    margin: 0 15px; /* Restaura el espacio entre elementos del menú */
+  }
+}
+/* Estilos para el breakpoint ≥992px y <1200px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-item {
+    margin: 0 20px; /* Aumenta el espacio entre elementos del menú */
+  }
+}
+/* Estilos para el breakpoint ≥1200px y <1400px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .menu-item {
+    margin: 0 25px; /* Aumenta el espacio entre elementos del menú */
+  }
+}
+/* Estilos para el breakpoint ≥1400px */
+@media (min-width: 1400px) {
+  .menu-item {
+    margin: 0 30px; /* Aumenta el espacio entre elementos del menú */
+  }
+}/*# sourceMappingURL=style.css.map */

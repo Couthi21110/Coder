@@ -1,0 +1,13 @@
+.card{
+   @include tarjetas;
+}
+.card img {
+    
+    @include imgtarjetas;
+}
+  
+.card-title {
+    @include titulotarjeta;
+}
+
+
