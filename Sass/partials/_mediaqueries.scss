@@ -45,46 +45,39 @@
       
       .email-footer { grid-area: email-footer; }
       
-
-
-   
-      
-     
-    
-      
 }
 
 /* Estilos para el breakpoint ≥576px y <768px */
 @media (min-width: 576px) and (max-width: 767px) {
-    .menu-item {
+    header {
         margin: 0 10px; /* Reduce el espacio entre elementos del menú */
     }
 }
 
 /* Estilos para el breakpoint ≥768px y <992px */
 @media (min-width: 768px) and (max-width: 991px) {
-    .menu-item {
+    header {
         margin: 0 15px; /* Restaura el espacio entre elementos del menú */
     }
 }
 
 /* Estilos para el breakpoint ≥992px y <1200px */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .menu-item {
+   header {
         margin: 0 20px; /* Aumenta el espacio entre elementos del menú */
     }
 }
 
 /* Estilos para el breakpoint ≥1200px y <1400px */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .menu-item {
+    header {
         margin: 0 25px; /* Aumenta el espacio entre elementos del menú */
     }
 }
 
 /* Estilos para el breakpoint ≥1400px */
 @media (min-width: 1400px) {
-    .menu-item {
+    header {
         margin: 0 30px; /* Aumenta el espacio entre elementos del menú */
     }
 }

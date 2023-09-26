@@ -17,7 +17,7 @@ body {
   background-image: url("../Images/Fondo.jpg");
 }
 
-nav ul {
+nav ul  {
   list-style: none;
   display: flex;
   margin: 0;
@@ -27,17 +27,16 @@ nav ul {
 nav ul li {
   margin: 10px;
   background-color: rgb(18, 18, 18);
-  width: 1000px;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   border: 2px white solid;
+  padding: 10px;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
-}
-nav ul li a:hover {
-  color: red;
+ 
 }
 
 .ul {
@@ -51,7 +50,7 @@ nav ul li a:hover {
   justify-content: center;
   background-color: black;
 }
-.menu .menu-item {
+.menu header {
   margin: 0 15px; /* Espacio entre elementos del menú */
 }
 
@@ -201,7 +200,7 @@ footer .email-footer {
     flex-direction: column; /* Cambia la dirección del menú a columna */
     align-items: center; /* Centra los elementos verticalmente */
   }
-  .menu-item {
+  header {
     margin: 10px 0; /* Espacio entre elementos del menú en el modo columna */
   }
   .servicios {
@@ -240,34 +239,38 @@ footer .email-footer {
   .email-footer {
     grid-area: email-footer;
   }
-}
-/* Estilos para el breakpoint ≥576px y <768px */
+   /* Estilos para el breakpoint ≥576px y <768px */
 @media (min-width: 576px) and (max-width: 767px) {
-  .menu-item {
+  .header {
     margin: 0 10px; /* Reduce el espacio entre elementos del menú */
   }
 }
+
 /* Estilos para el breakpoint ≥768px y <992px */
 @media (min-width: 768px) and (max-width: 991px) {
-  .menu-item {
+  .header {
     margin: 0 15px; /* Restaura el espacio entre elementos del menú */
   }
 }
+
 /* Estilos para el breakpoint ≥992px y <1200px */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .menu-item {
+  .header {
     margin: 0 20px; /* Aumenta el espacio entre elementos del menú */
   }
 }
+
 /* Estilos para el breakpoint ≥1200px y <1400px */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .menu-item {
+  .header {
     margin: 0 25px; /* Aumenta el espacio entre elementos del menú */
   }
 }
+
 /* Estilos para el breakpoint ≥1400px */
 @media (min-width: 1400px) {
-  .menu-item {
+  .header {
     margin: 0 30px; /* Aumenta el espacio entre elementos del menú */
   }
+}
 }/*# sourceMappingURL=style.css.map */
